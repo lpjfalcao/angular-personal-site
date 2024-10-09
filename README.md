@@ -4,6 +4,7 @@ Este projeto foi gerado com o Angular na versão 17 e é destinado para apresent
 portfólio.
 
 ## Estrutura do projeto
+```
 src/
 └── app/
     ├── pages/
@@ -15,7 +16,7 @@ src/
     │       │   ├── personal-info/
     │       │   ├── projects/
     │       │   ├── companies/
-    │       │   ├── techonologies/
+    │       │   └── techonologies/
     │       └── services/
     │           └── home-data.service.ts
     ├── shared/
