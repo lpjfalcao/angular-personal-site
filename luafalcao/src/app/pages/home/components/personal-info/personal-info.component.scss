@@ -1,0 +1,69 @@
+.grid-container {
+  height: calc(100vh - 64px); // Subtrai a altura padrão da mat-toolbar
+  padding: 20px;
+  box-sizing: border-box;
+  margin-top: 64px; // Adiciona margem no topo igual à altura da header
+}
+
+mat-grid-list {
+  height: 100%;
+}
+
+mat-grid-tile {
+  overflow: visible;
+}
+
+.tile-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.main {
+  h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-size: 1.2em;
+    max-width: 600px;
+    margin-bottom: 20px;
+  }
+
+  .cta-button {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+}
+
+mat-grid-tile:nth-child(1) {
+  height: 60% !important;
+}
+
+mat-grid-tile:nth-child(2) {
+  height: 20% !important;
+}
+
+mat-grid-tile:nth-child(3) {
+  height: 20% !important;
+}
+
+.illustration-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 20px;
+}
+
+svg {
+  max-width: 100%;
+  height: auto;
+  max-height: 300px; // Ajuste conforme necessário
+}

@@ -1,1 +1,28 @@
-<app-project-card></app-project-card>
+<div class="projects-container">
+    <h2>PROJETOS EM QUE ATUEI</h2>
+    <div class="projects-grid">
+      <app-project-card
+        [imageSrc]="'https://via.placeholder.com/300x200/4A90E2/FFFFFF?text=Portal+Web+JUCERJA'"
+        [title]="'Portal Web JUCERJA'"
+        [description]="'Migração tecnológica do Portal Web da JUCERJA onde atuei como Front-end desenvolvendo interfaces de usuário com design responsivo.'"
+        [projectType]="'FRONT-END'"
+        [projectLink]="'/projeto-jucerja'">
+      </app-project-card>
+      
+      <app-project-card
+        [imageSrc]="'https://via.placeholder.com/300x200/34495E/FFFFFF?text=Portal+Web+Braslight'"
+        [title]="'Portal Web Braslight'"
+        [description]="'Migração tecnológica do Portal Web da Braslight Seguros para uma tecnologia mais moderna onde atuei como Full-Stack desenvolvendo interfaces de usuário e Web APIs.'"
+        [projectType]="'FULL-STACK'"
+        [projectLink]="'/projeto-braslight'">
+      </app-project-card>
+      
+      <app-project-card
+        [imageSrc]="'https://via.placeholder.com/300x200/27AE60/FFFFFF?text=e-Contador'"
+        [title]="'e-Contador'"
+        [description]="'Desenvolvimento de aplicativo para o setor contábil em iOS para iPhones e iPads onde fiquei responsável pela publicação do produto na App Store e implementação de funcionalidades como download de documentos e Push Notifications.'"
+        [projectType]="'MOBILE'"
+        [projectLink]="'/projeto-econtador'">
+      </app-project-card>
+    </div>
+  </div>

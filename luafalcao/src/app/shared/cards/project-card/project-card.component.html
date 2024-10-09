@@ -1,1 +1,7 @@
-<p>project-card works!</p>
+<div class="project-card">
+    <img [src]="imageSrc" alt="{{ title }}">
+    <div class="project-type">{{ projectType }}</div>
+    <h3>{{ title }}</h3>
+    <p>{{ description }}</p>
+    <a [href]="projectLink">Ver Projeto ></a>
+  </div>

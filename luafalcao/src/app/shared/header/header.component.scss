@@ -1,0 +1,43 @@
+.mat-toolbar {
+    background-color: white;
+    color: black;
+  }
+  
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: calc(100% - 100px); // 50px de cada lado
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+  
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .spacer {
+    flex: 1 1 auto;
+  }
+  
+  nav {
+    display: flex;
+    align-items: center;
+  
+    a {
+      margin-left: 16px;
+      color: black;
+      text-decoration: none;
+    }
+  }
+  
+  // Media query para telas menores
+  @media (max-width: 768px) {
+    .header-container {
+      max-width: 100%;
+      padding: 0 10px;
+    }
+  }
