@@ -1,13 +1,12 @@
 ::ng-deep .mat-toolbar {
-    color: black;
+    color: silver; // Mudou a cor do menu para silver
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); // Efeito de sombra
     position: relative;
     z-index: 100;
     background: transparent !important;
-    color: silver !important;
-  }
+}
   
-  .header-container {
+.header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -16,75 +15,87 @@
     margin: 0 auto;
     padding: 0 70px;
     box-sizing: border-box;
-  }
+}
   
-  .title {
+.title {
     font-size: 28px;
-  }
+    color: silver;
+}
   
-  .spacer {
+.spacer {
     flex: 1 1 auto;
-  }
+}
   
-  nav {
+nav {
     display: flex;
     align-items: center;
-  
-    a {
-      margin-left: 16px;
-      color: silver;
-      text-decoration: none;
-      font-size: 16px;
-    }
-  }
-  
-  // Media query para telas menores
-  @media (max-width: 768px) {
-    .header-container {
-      max-width: 100%;
-      padding: 0 10px;
-    }
-  }
 
-  .header-container {
+    a {
+        margin-left: 16px;
+        color: silver; // Mudou a cor do texto para silver
+        text-decoration: none;
+        font-size: 16px;
+        transition: color 0.3s; // Efeito de transição
+    }
+
+    a:hover {
+        color: #03e9f4; // Cor ao passar o mouse
+    }
+
+    a:active {
+        color: #03e9f4; // Cor ao clicar no link
+    }
+}
+  
+// Media query para telas menores
+@media (max-width: 768px) {
+    .header-container {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+
+    .nav-container {
+        display: none;
+        position: absolute;
+        top: 64px;
+        left: 0;
+        right: 0;
+        background-color: white; // Fundo alterado para branco
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+}
+
+.header-container {
     display: flex;
     align-items: center;
     width: 100%;
-  }
+}
   
-  .spacer {
+.spacer {
     flex: 1 1 auto;
-  }
+}
   
-  .menu-button {
+.menu-button {
     display: none;
-  }
+}
   
-  @media (max-width: 768px) {
+@media (max-width: 768px) {
     .menu-button {
-      display: block;
-    }
-  
-    .nav-container {
-      display: none;
-      position: absolute;
-      top: 64px;
-      left: 0;
-      right: 0;
-      background-color: #fff;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        display: block;
+        color: silver; // Mantém a cor do mat-icon como silver
     }
   
     .nav-container.nav-open {
-      display: block;
+        display: block;
     }
   
     nav {
-      display: flex;
-      flex-direction: column;
+        display: flex;
+        flex-direction: column;
     }
   
     nav a {
-      padding: 10px;
+        padding: 10px;
+        color: black; // Cor do texto alterada para preto no menu responsivo
     }
-  }
+}
