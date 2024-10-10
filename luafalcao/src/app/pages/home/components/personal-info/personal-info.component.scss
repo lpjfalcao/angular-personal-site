@@ -1,3 +1,14 @@
+.main-container {
+  margin: 0 auto; // Centraliza o container
+  padding-left: 100px;
+  background-image: url('../../../../../assets/img/waves.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+  margin-top: -63px;
+}
+
 .grid-container {
   height: calc(100vh - 64px); // Subtrai a altura padrão da mat-toolbar
   padding: 150px 20px; // Aumenta o espaço no topo
@@ -33,12 +44,12 @@ mat-grid-tile {
     font-size: 1.2em;
     max-width: 600px;
     margin-bottom: 20px;
+    color: silver
   }
 
   .cta-button {
     text-decoration: none;
-    color: #333;
-    font-weight: bold;
+    color: #00BFFF;
   }
 }
 
@@ -66,4 +77,34 @@ svg {
   max-width: 100%;
   height: auto;
   max-height: 300px; // Ajuste conforme necessário
+}
+
+.subtle-neon-button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 500;
+  border: 1px solid rgba(3, 233, 244, 0.3);
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  outline: none;
+  
+  color: #03e9f4 !important;
+  background-color: rgba(3, 233, 244, 0.05) !important;
+  border-color: #03e9f4;
+  box-shadow: 0 0 15px rgba(3, 233, 244, 0.5);
+  text-shadow: 0 0 5px rgba(3, 233, 244, 0.5);
+
+  &:hover {
+    background-color: rgba(3, 233, 244, 0.05);
+  }
+  
+  &:active {
+    background-color: rgba(3, 233, 244, 0.2);
+  }
 }

@@ -1,0 +1,17 @@
+.typing-effect {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 3rem;
+    color: #fff;
+  
+    .cursor {
+      animation: blink 0.7s infinite;
+    }
+
+    margin-bottom: 40px;
+  }
+  
+  @keyframes blink {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+  }

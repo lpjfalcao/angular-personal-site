@@ -3,17 +3,16 @@
     <mat-grid-list cols="2" rowHeight="fit" gutterSize="20">
       <mat-grid-tile>
         <div class="tile-content main">
-          <h1>Desenvolvedor de Software</h1>
-          <p>Profissional com experiência no desenvolvimento de software empresarial com atuação em diversos projetos de diferentes empresas.</p>
-          <a href="#" class="cta-button">ver currículo ></a>
+          <app-typing-effect [text]="'Engenheiro de Software'" [typingSpeed]="50"></app-typing-effect>
+          <p>Profissional Full-Stack com {{ yearsOfExperience }} de experiência no mercado de TI com atuação em diversos projetos em diferentes empresas.</p>
+          <br />
+          <button mat-raised-button class="subtle-neon-button">
+            Ver currículo
+          </button>
         </div>
       </mat-grid-tile>
       
-      <!-- <mat-grid-tile>
-        <div class="tile-content animation-container">
-          teste
-        </div>
-      </mat-grid-tile> -->
+      <!-- ... resto do código ... -->
     </mat-grid-list>
   </div>
 </div>
