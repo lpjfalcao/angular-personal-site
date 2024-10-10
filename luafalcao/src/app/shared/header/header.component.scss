@@ -45,3 +45,46 @@
       padding: 0 10px;
     }
   }
+
+  .header-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .spacer {
+    flex: 1 1 auto;
+  }
+  
+  .menu-button {
+    display: none;
+  }
+  
+  @media (max-width: 768px) {
+    .menu-button {
+      display: block;
+    }
+  
+    .nav-container {
+      display: none;
+      position: absolute;
+      top: 64px;
+      left: 0;
+      right: 0;
+      background-color: #fff;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+  
+    .nav-container.nav-open {
+      display: block;
+    }
+  
+    nav {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    nav a {
+      padding: 10px;
+    }
+  }
