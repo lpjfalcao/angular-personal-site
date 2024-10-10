@@ -1,17 +1,19 @@
 .main-container {
   margin: 0 auto; // Centraliza o container
-  padding-left: 100px;
+  padding: 20px; // Ajusta o padding para telas menores
   background-image: url('../../../../../assets/img/waves.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   color: #fff;
   margin-top: -63px;
+  padding-left: 110px;
+
 }
 
 .grid-container {
   height: calc(100vh - 64px); // Subtrai a altura padrão da mat-toolbar
-  padding: 150px 20px; // Aumenta o espaço no topo
+  padding: 50px 20px; // Ajusta o espaço no topo para telas menores
   box-sizing: border-box;
   z-index: 5;
 }
@@ -36,15 +38,15 @@ mat-grid-tile {
 
 .main {
   h1 {
-    font-size: 3em;
+    font-size: 2.5em; // Ajusta o tamanho da fonte para telas menores
     margin-bottom: 20px;
   }
 
   p {
-    font-size: 1.2em;
-    max-width: 600px;
+    font-size: 1em; // Ajusta o tamanho da fonte para telas menores
+    max-width: 100%; // Permite que o texto ocupe toda a largura disponível
     margin-bottom: 20px;
-    color: silver
+    color: silver;
   }
 
   .cta-button {
@@ -106,5 +108,44 @@ svg {
   
   &:active {
     background-color: rgba(3, 233, 244, 0.2);
+  }
+}
+
+// Media query para telas menores
+@media (max-width: 768px) {
+  .main-container {
+    padding: 10px; // Reduz o padding em telas menores
+    padding-top: 60px;
+    padding-left: 0;
+  }
+
+  .grid-container {
+    padding: 20px; // Reduz o padding em telas menores
+  }
+
+  .main {
+    h1 {
+      font-size: 2em; // Ajusta o tamanho da fonte para telas menores
+    }
+
+    p {
+      font-size: 0.9em; // Ajusta o tamanho da fonte para telas menores
+    }
+  }
+
+  .subtle-neon-button {
+    min-width: 200px;
+  }
+
+  .tile-content {
+    padding: 7px;
+  }
+}
+
+@media (min-width: 1624px) {
+  .main-container {
+    padding: 10px; // Reduz o padding em telas menores
+    padding-top: 60px;
+    padding-left: 90px;
   }
 }
