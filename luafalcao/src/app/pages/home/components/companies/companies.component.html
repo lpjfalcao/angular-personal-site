@@ -1,1 +1,8 @@
-<app-mission-statement></app-mission-statement>
+<div class="companies-container">
+    <h1>EMPRESAS ONDE TRABALHEI</h1>
+    <div class="empresas-container">
+        <div class="empresa" *ngFor="let empresa of empresas">
+        <img [src]="empresa.logo" [alt]="empresa.nome">
+        </div>
+    </div>
+</div>
