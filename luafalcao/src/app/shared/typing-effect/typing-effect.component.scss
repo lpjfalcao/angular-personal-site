@@ -2,7 +2,6 @@
     font-family: 'Open Sans', sans-serif;
     font-size: 3rem;
     color: #fff;
-    border: solid 1px;
     min-width: 700px;
   
     .cursor {
@@ -21,11 +20,8 @@
   @media (max-width: 768px) {
     .typing-effect {
       font-size: 1.5rem;
-      min-width: auto;
-
-
-      .cursor {
-        display: none;
-      }
+      min-width: 400px;
     }
   }
+
+ 
