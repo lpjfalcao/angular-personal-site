@@ -1,5 +1,6 @@
+
 .project-card {
-    border: 1px solid #ddd;
+    // border: 1px solid #ddd;
     border-radius: 8px;
     padding: 16px;
     margin: 16px;
@@ -10,6 +11,7 @@
     width: 100%;
     height: auto;
     border-radius: 8px;
+    height: 250px;
   }
   
   .project-type {
@@ -18,10 +20,48 @@
     border-radius: 4px;
     display: inline-block;
     margin-top: 8px;
+    font-size: 12px;
+  }
+
+  .front-end {
+    background-color: #ffe0b3; // Cor de fundo laranja claro
+    color: #ff8c00; // Cor do texto laranja escuro
+    padding: 4px 8px;
+    border-radius: 4px;
+    display: inline-block;
+    font-weight: bold;
+  }
+
+  .full-stack {
+    background-color: #c1f0c1; // Cor de fundo verde claro
+    color: #00a000; // Cor do texto verde escuro
+    padding: 4px 8px;
+    border-radius: 4px;
+    display: inline-block;
+    font-weight: bold;
+  }
+
+  .back-end {
+    background-color: #e6e6fa; // Cor de fundo roxo claro
+    color: #8a2be2; // Cor do texto roxo escuro
+    padding: 4px 8px;
+    border-radius: 4px;
+    display: inline-block;
+    font-weight: bold;
+  }
+
+  .mobile {
+    background-color: #ffcccb; // Cor de fundo vermelho claro
+    color: #dc143c; // Cor do texto vermelho escuro
+    padding: 4px 8px;
+    border-radius: 4px;
+    display: inline-block;
+    font-weight: bold;
   }
   
-  .project-card h3 {
+  .project-card h2 {
     margin-top: 8px;
+    font-weight: 500;
   }
   
   .project-card a {
