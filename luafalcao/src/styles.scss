@@ -1,21 +1,55 @@
-/* You can add global styles to this file, and also import other style files */
+@use '@angular/material' as mat;
 
+// Importe o tema pré-construído
+@include mat.core();
+
+// Importe o tema pré-construído diretamente
 @import '@angular/material/prebuilt-themes/deeppurple-amber.css';
 
-html, body { height: 100%; }
-body { margin: 0;  font-family: 'Roboto', sans-serif, sans-serif; }
+// Defina a fonte Open Sans globalmente
+body, html {
+  font-family: 'Open Sans', sans-serif !important;
+}
 
+body {
+    margin: 0;
+    height: 100%;
+}
+
+// Força todos os elementos a herdar a fonte
+* {
+  font-family: inherit !important;
+}
+
+// Sobrescreve a fonte padrão do Material
+.mat-typography {
+  font-family: 'Open Sans', sans-serif !important;
+}
+
+// Aplica a fonte Open Sans a todos os componentes do Material
+.mat-button, .mat-raised-button, .mat-icon-button, .mat-stroked-button,
+.mat-flat-button, .mat-fab, .mat-mini-fab, .mat-card-title, .mat-card-subtitle, 
+.mat-card-content, .mat-list-item, .mat-list-option, .mat-toolbar,
+.mat-toolbar h1, .mat-toolbar h2, .mat-toolbar h3, .mat-toolbar h4, 
+.mat-toolbar h5, .mat-toolbar h6, .mat-form-field, .mat-checkbox, .mat-radio-button,
+.mat-select, .mat-slide-toggle, .mat-slider, .mat-tab-group, .mat-expansion-panel,
+.mat-menu-item, .mat-paginator, .mat-sort-header, .mat-table, .mat-option {
+  font-family: 'Open Sans', sans-serif !important;
+}
+
+// Adicione esta regra para garantir que o mat-toolbar use Open Sans
+.mat-toolbar, .mat-toolbar h1, .mat-toolbar h2, .mat-toolbar h3, 
+.mat-toolbar h4, .mat-toolbar h5, .mat-toolbar h6 {
+  font-family: 'Open Sans', sans-serif !important;
+}
+// Adicione mais seletores conforme necessário para outros componentes do Material
 .main-container {
-    max-width: calc(100% - 200px); // 100px de cada lado
     margin: 0 auto; // Centraliza o container
-    padding: 0 20px; // Adiciona um pouco de padding interno
-    box-sizing: border-box;
-  }
-  
-  // Media query para telas menores
-  @media (max-width: 768px) {
-    .main-container {
-      max-width: 100%;
-      padding: 0 10px;
-    }
-  }
+    padding-left: 100px;
+    background-image: url('assets/img/waves.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    margin-top: -63px;
+}

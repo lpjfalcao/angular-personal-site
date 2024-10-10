@@ -1,9 +1,15 @@
 .projects-container {
     padding: 50px;
-  }
+}
   
-  .projects-grid {
+.projects-grid {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-  }
+    justify-content: center; /* Centraliza os elementos */
+    gap: 10px; /* Reduz o espaço entre os componentes */
+}
+
+.projects-grid > app-project-card {
+    flex: 0 1 auto; /* Permite que os cards se ajustem ao tamanho do conteúdo */
+    margin: 5px; /* Reduz ainda mais a margem entre os cards */
+}

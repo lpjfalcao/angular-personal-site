@@ -1,0 +1,24 @@
+.mission-statement-container {
+    background: linear-gradient(135deg, #4e54c8, #8f94fb);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+  }
+  
+  .mission-statement-text {
+    font-family: 'Arial', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: white;
+    text-align: left;
+    max-width: 800px;
+    line-height: 1.4;
+  }
+  
+  @media (max-width: 768px) {
+    .mission-statement-text {
+      font-size: 1.8rem;
+    }
+  }

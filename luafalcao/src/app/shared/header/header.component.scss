@@ -1,6 +1,10 @@
-.mat-toolbar {
-    background-color: white;
+::ng-deep .mat-toolbar {
     color: black;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); // Efeito de sombra
+    position: relative;
+    z-index: 100;
+    background: transparent !important;
+    color: silver !important;
   }
   
   .header-container {
@@ -10,13 +14,12 @@
     width: 100%;
     max-width: calc(100% - 100px); // 50px de cada lado
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 70px;
     box-sizing: border-box;
   }
   
   .title {
-    font-size: 24px;
-    font-weight: bold;
+    font-size: 28px;
   }
   
   .spacer {
@@ -29,8 +32,9 @@
   
     a {
       margin-left: 16px;
-      color: black;
+      color: silver;
       text-decoration: none;
+      font-size: 16px;
     }
   }
   

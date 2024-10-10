@@ -1,8 +1,8 @@
 .grid-container {
   height: calc(100vh - 64px); // Subtrai a altura padrão da mat-toolbar
-  padding: 20px;
+  padding: 150px 20px; // Aumenta o espaço no topo
   box-sizing: border-box;
-  margin-top: 64px; // Adiciona margem no topo igual à altura da header
+  z-index: 5;
 }
 
 mat-grid-list {
