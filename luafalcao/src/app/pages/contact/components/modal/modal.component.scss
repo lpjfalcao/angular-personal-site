@@ -1,0 +1,88 @@
+@import '../../../../../styles.scss';
+
+.contato-modal {
+    max-width: 600px;
+    padding: 20px;
+  
+    h2 {
+      color: #333;
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+  
+    mat-dialog-content {
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+  
+        mat-form-field {
+          width: 100%;
+        }
+      }
+    }
+  
+    mat-dialog-actions {
+      margin-top: 20px;
+  
+      button {
+        min-width: 100px;
+        
+        
+        &:not(:last-child) {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+  
+  // Estilos personalizados para os campos do formulário
+  ::ng-deep {
+    .mat-form-field-appearance-outline .mat-form-field-outline {
+      color: $blue;
+    }
+  
+    .mat-form-field-appearance-outline.mat-focused .mat-form-field-outline-thick {
+      color: $blue;
+    }
+  
+    .mat-form-field-appearance-outline .mat-form-field-label {
+      color: #666;
+    }
+  
+    .mat-input-element {
+      color: #333;
+    }
+  
+    textarea.mat-input-element {
+      resize: vertical;
+    }
+  }
+
+  .btn-enviar {
+    background-color: $blue;
+  }
+
+  .btn-cancelar {
+    margin-right: 8px;
+  }
+
+  ::ng-deep {
+    .mdc-text-field--outlined {
+      &.mdc-text-field--focused {
+        .mdc-notched-outline__leading,
+        .mdc-notched-outline__notch,
+        .mdc-notched-outline__trailing {
+          border-color: $blue !important;
+        }
+  
+        .mdc-floating-label {
+          color: $blue !important;
+        }
+  
+        .mdc-text-field__input {
+          caret-color: $blue !important;
+        }
+      }
+    }
+  }

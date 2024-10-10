@@ -1,0 +1,30 @@
+<div class="contato-modal">
+    <h2 mat-dialog-title>Entre em Contato</h2>
+    <mat-dialog-content>
+      <form [formGroup]="formContato">
+        <mat-form-field appearance="outline">
+          <mat-label>Nome</mat-label>
+          <input matInput formControlName="nome" placeholder="Seu nome">
+        </mat-form-field>
+  
+        <mat-form-field appearance="outline">
+          <mat-label>E-mail</mat-label>
+          <input matInput formControlName="email" placeholder="seu@email.com" type="email">
+        </mat-form-field>
+  
+        <mat-form-field appearance="outline">
+          <mat-label>Telefone</mat-label>
+          <input matInput formControlName="telefone" placeholder="(00) 00000-0000">
+        </mat-form-field>
+  
+        <mat-form-field appearance="outline">
+          <mat-label>Mensagem</mat-label>
+          <textarea matInput formControlName="mensagem" rows="4" placeholder="Digite sua mensagem aqui"></textarea>
+        </mat-form-field>
+      </form>
+    </mat-dialog-content>
+    <mat-dialog-actions align="end">
+        <button mat-button (click)="fechar()" class="btn-cancelar">Cancelar</button>
+        <button mat-raised-button color="primary" class="btn-enviar" (click)="enviar()">Salvar</button>
+      </mat-dialog-actions>
+  </div>

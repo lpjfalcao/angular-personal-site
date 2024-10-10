@@ -10,7 +10,7 @@
     <div class="nav-container" [class.nav-open]="isMenuOpen">
       <nav>
         <a mat-button routerLink="/sobre" routerLinkActive="active">Sobre</a>
-        <a mat-button href="#">Contato</a>
+        <a mat-button (click)="abrirModal()">Contato</a>
         <a mat-button href="https://www.linkedin.com/in/luafalcao/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
         <a mat-button href="https://github.com/lpjfalcao" target="_blank" rel="noopener noreferrer">GitHub</a>
       </nav>

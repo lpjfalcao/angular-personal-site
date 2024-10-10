@@ -1,3 +1,5 @@
+@import '../../../styles.scss';
+
 ::ng-deep .mat-toolbar {
     color: silver; // Mudou a cor do menu para silver
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); // Efeito de sombra
@@ -22,7 +24,7 @@
     color: silver;
 
      &:hover {
-        color: #03e9f4; // Cor ao passar o mouse
+        color: $blue; // Cor ao passar o mouse
         cursor: pointer;
     }
 }
@@ -44,11 +46,11 @@ nav {
     }
 
     a:hover {
-        color: #03e9f4; // Cor ao passar o mouse
+        color: $blue; // Cor ao passar o mouse
     }
 
     a:active {
-        color: #03e9f4; // Cor ao clicar no link
+        color: $blue; // Cor ao clicar no link
     }
 }
   

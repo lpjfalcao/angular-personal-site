@@ -1,3 +1,5 @@
+@import '../../../../../styles.scss';
+
 .main-container {
   margin: 0 auto; // Centraliza o container
   padding: 20px; // Ajusta o padding para telas menores
@@ -51,7 +53,7 @@ mat-grid-tile {
 
   .cta-button {
     text-decoration: none;
-    color: #00BFFF;
+    color: $blue;
   }
 }
 
@@ -96,11 +98,11 @@ svg {
   cursor: pointer;
   outline: none;
   
-  color: #03e9f4 !important;
+  color: $blue !important;
   background-color: rgba(3, 233, 244, 0.05) !important;
-  border-color: #03e9f4;
-  box-shadow: 0 0 15px rgba(3, 233, 244, 0.5);
-  text-shadow: 0 0 5px rgba(3, 233, 244, 0.5);
+  border-color: $blue;
+  box-shadow: $blue-shadow;
+  text-shadow: $blue-shadow;
 
   &:hover {
     background-color: rgba(3, 233, 244, 0.05);
