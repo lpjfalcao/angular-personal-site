@@ -8,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './mission-statement.component.scss'
 })
 export class MissionStatementComponent {
-  missionText = `Eu combino meu conhecimento em tecnologia com o domínio de negócios do cliente para desenvolver soluções flexíveis, reutilizáveis, fáceis de dar manutenção e que agregam valor aos usuários.`;
+  missionText = `"Eu uso o meu conhecimento em tecnologia para desenvolver soluções que agregam valor às empresas e aos usuários."`;
 }

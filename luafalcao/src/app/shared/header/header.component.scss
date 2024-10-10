@@ -20,6 +20,11 @@
 .title {
     font-size: 28px;
     color: silver;
+
+     &:hover {
+        color: #03e9f4; // Cor ao passar o mouse
+        cursor: pointer;
+    }
 }
   
 .spacer {

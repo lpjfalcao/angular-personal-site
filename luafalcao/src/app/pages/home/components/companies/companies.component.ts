@@ -17,7 +17,7 @@ export class CompaniesComponent {
     { nome: 'IBM', logo: 'assets/img/ibm-logo.png', url: 'https://www.ibm.com/' },
     { nome: 'Perlink', logo: 'assets/img/perlink-logo.png', url: 'https://www.perlink.com.br/' },
     { nome: 'Alterdata Software', logo: 'assets/img/alterdata-logo.png', url: 'https://www.alterdata.com.br/' },
-    { nome: 'Agile Content', logo: 'assets/img/agile-content.png', url: 'https://www.agilecontent.com.br/' },
+    { nome: 'Agile Content', logo: 'assets/img/agile-content.png', url: 'https://www.agilecontent.com/' },
     { nome: 'Wipro', logo: 'assets/img/wipro.png', url: 'https://www.wipro.com/' },
   ];
 

@@ -1,0 +1,11 @@
+<div class="timeline">
+    <div class="timeline-item" *ngFor="let item of timelineItems">
+      <div class="timeline-content">
+        <div class="timeline-img">
+          <img [src]="item.logo" alt="Logo Empresa 1">
+        </div>
+        <p [innerHTML]="item.description"></p>
+      </div>
+      <div class="timeline-year">{{item.year}}</div>
+    </div>
+ </div>

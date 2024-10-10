@@ -1,6 +1,6 @@
 <mat-toolbar>
   <div class="header-container">
-    <span class="title">Luã Falcão</span>
+    <span class="title" (click)="navigateToHome()">Luã Falcão</span>
     <span class="spacer"></span>
     <!-- Adicionando um botão de menu para telas menores -->
     <button mat-icon-button class="menu-button" (click)="toggleMenu()">
@@ -9,10 +9,10 @@
     <!-- Envolvendo a navegação em um div para controle de exibição -->
     <div class="nav-container" [class.nav-open]="isMenuOpen">
       <nav>
-        <a mat-button href="#">Sobre</a>
+        <a mat-button routerLink="/sobre" routerLinkActive="active">Sobre</a>
         <a mat-button href="#">Contato</a>
-        <a mat-button href="#">LinkedIn</a>
-        <a mat-button href="#">GitHub</a>
+        <a mat-button href="https://www.linkedin.com/in/luafalcao/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a mat-button href="https://github.com/lpjfalcao" target="_blank" rel="noopener noreferrer">GitHub</a>
       </nav>
     </div>
   </div>

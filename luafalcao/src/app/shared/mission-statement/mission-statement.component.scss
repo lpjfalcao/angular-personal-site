@@ -1,6 +1,6 @@
 .mission-statement-container {
     background: linear-gradient(135deg, #4e54c8, #8f94fb);
-    height: 100vh;
+    height: 60vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,6 +16,8 @@
     max-width: 800px;
     line-height: 1.4;
   }
+
+  
   
   @media (max-width: 768px) {
     .mission-statement-text {
