@@ -8,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './footer.component.scss'
 })
 export class FooterComponent {
-
+  yearsOfExperience: number = new Date().getFullYear() - 2014;
 }
