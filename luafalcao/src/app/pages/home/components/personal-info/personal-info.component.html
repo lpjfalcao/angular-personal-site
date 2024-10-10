@@ -6,7 +6,7 @@
           <app-typing-effect [text]="'Engenheiro de Software'" [typingSpeed]="50"></app-typing-effect>
           <p>Profissional Full-Stack com {{ yearsOfExperience }} de experiência no mercado de TI com atuação em diversos projetos em diferentes empresas.</p>
           <br />
-          <button mat-raised-button class="subtle-neon-button">
+          <button mat-raised-button class="subtle-neon-button" (click)="downloadResume()">
             Ver currículo
           </button>
         </div>

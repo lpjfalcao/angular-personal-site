@@ -4,12 +4,11 @@ import { ProjectsComponent } from './components/projects/projects.component';
 import { CompaniesComponent } from './components/companies/companies.component';
 import { TechnologiesComponent } from './components/technologies/technologies.component';
 import { HeaderComponent } from '../../shared/header/header.component';
-
-
+import { FooterComponent } from '../../shared/footer/footer.component';
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [PersonalInfoComponent, ProjectsComponent, CompaniesComponent, TechnologiesComponent, HeaderComponent],
+  imports: [PersonalInfoComponent, ProjectsComponent, CompaniesComponent, TechnologiesComponent, HeaderComponent, FooterComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })

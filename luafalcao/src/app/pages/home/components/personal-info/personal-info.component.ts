@@ -14,4 +14,8 @@ import { TypingEffectComponent } from '../../../../shared/typing-effect/typing-e
 })
 export class PersonalInfoComponent {
   yearsOfExperience: number = new Date().getFullYear() - 2014;
+
+  downloadResume() {
+    window.open('https://luafalcao-resume.s3.us-west-1.amazonaws.com/Lua-Falcao-Resume.pdf', '_blank');
+  }
 }
