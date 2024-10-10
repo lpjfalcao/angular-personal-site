@@ -7,6 +7,10 @@ h1 {
     font-size: 2rem;
   }
 
+  .titulo-com-sombra {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+
 .empresas-container {
     display: flex;
     flex-wrap: wrap;
@@ -36,10 +40,9 @@ h1 {
     }
   
     &:hover {
-    //   background-color: #e0e0e0;
-  
       img {
         filter: grayscale(100%);
+        cursor: pointer;
       }
     }
   }
@@ -53,7 +56,19 @@ h1 {
       width: 120px;
       height: 60px;
     }
+
+    h1 {
+      padding-left: 10px;
+      font-size: 1.5em;
+      text-align: center;
+    }
+  
+  
+
   }
+
+  
+
 
 
   

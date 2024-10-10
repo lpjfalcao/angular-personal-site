@@ -1,8 +1,8 @@
 <div class="companies-container">
-    <h1>EMPRESAS ONDE TRABALHEI</h1>
+    <h1 class="titulo-com-sombra">EMPRESAS ONDE TRABALHEI</h1>
     <div class="empresas-container">
         <div class="empresa" *ngFor="let empresa of empresas">
-        <img [src]="empresa.logo" [alt]="empresa.nome">
+        <img [src]="empresa.logo" [alt]="empresa.nome" (click)="redirecionarParaEmpresa(empresa.url)">
         </div>
     </div>
 </div>
