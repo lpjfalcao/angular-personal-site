@@ -9,7 +9,7 @@ export class ContactServiceService {
   constructor(private http: HttpClient) { }
 
   sendContact(contactData: any): Observable<string> {
-    return this.http.post('https://1hqy3bq760.execute-api.us-west-1.amazonaws.com/api/contact/send', contactData, { responseType: 'text' })
+    return this.http.post('https://1hqy3bq760.execute-api.us-west-1.amazonaws.com/contact/send', contactData, { responseType: 'text' })
       .pipe(
         map((response: any) => response as string)
       );
