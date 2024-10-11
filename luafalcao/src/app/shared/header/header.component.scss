@@ -1,7 +1,7 @@
 @import '../../../styles.scss';
 
 ::ng-deep .mat-toolbar {
-    color: silver; // Mudou a cor do menu para silver
+    color: $silver; // Mudou a cor do menu para silver
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); // Efeito de sombra
     position: relative;
     z-index: 100;
@@ -21,10 +21,10 @@
   
 .title {
     font-size: 28px;
-    color: silver;
+    color: $silver;
 
      &:hover {
-        color: $blue; // Cor ao passar o mouse
+        color: $white; // Cor ao passar o mouse
         cursor: pointer;
     }
 }
@@ -39,18 +39,18 @@ nav {
 
     a {
         margin-left: 16px;
-        color: silver; // Mudou a cor do texto para silver
+        color: $silver; // Mudou a cor do texto para silver
         text-decoration: none;
         font-size: 16px;
         transition: color 0.3s; // Efeito de transição
     }
 
     a:hover {
-        color: $blue; // Cor ao passar o mouse
+        color: $white; // Cor ao passar o mouse
     }
 
     a:active {
-        color: $blue; // Cor ao clicar no link
+        color: $white; // Cor ao clicar no link
     }
 }
   
@@ -67,7 +67,7 @@ nav {
         top: 64px;
         left: 0;
         right: 0;
-        background-color: white; // Fundo alterado para branco
+        background-color: $white; // Fundo alterado para branco
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     }
 }
@@ -89,7 +89,7 @@ nav {
 @media (max-width: 768px) {
     .menu-button {
         display: block;
-        color: silver; // Mantém a cor do mat-icon como silver
+        color: $silver; // Mantém a cor do mat-icon como silver
     }
   
     .nav-container.nav-open {

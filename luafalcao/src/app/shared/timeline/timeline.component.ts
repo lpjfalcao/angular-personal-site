@@ -47,7 +47,7 @@ export class TimelineComponent {
     },
     {
       logo: 'assets/img/wipro.png',
-      description: `Wipro é uma multinacional de origem indiana onde tive a oportunidade de atuar em diferentes projetos. Enquanto estive alocado em um projeto de prevenção a fraudes do Banco Itaú durante 1 ano e 4 meses, atuei como Desenvolvedor Full-Stack, desenvolvendo APIs com a plataforma .NET, realizando melhorias na arquitetura do sistema e a construção de Interfaces de Usuário com o framework Angular.`,
+      description: `Wipro é uma multinacional de origem indiana onde tive a oportunidade de atuar em diferentes projetos voltado para o ramo financeiro no Banco Itaú e para o ramo de seguros na Akad Seguros. Atuei como Full-Stack e Back-end desenvolvendo APIs com a plataforma .NET, realizando melhorias na arquitetura do sistema e a construção de Interfaces de Usuário com o framework Angular. Também realizei manutenção em microsserviços e em sistemas distribuídos e apliquei diferentes Padrões de Projetos nas soluções implementadas.`,
       year: '2022'
     }
   ]

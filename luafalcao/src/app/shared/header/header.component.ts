@@ -6,6 +6,9 @@ import { RouterModule } from '@angular/router';
 import { Router } from '@angular/router';
 import { ModalComponent } from '../../pages/contact/components/modal/modal.component';
 import { MatDialog } from '@angular/material/dialog';
+import { Subscription } from 'rxjs';
+import { filter } from 'rxjs/operators';
+import { NavigationEnd } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -16,15 +19,23 @@ import { MatDialog } from '@angular/material/dialog';
 })
 export class HeaderComponent {
   isMenuOpen = false;
+  private routerSubscription: Subscription | undefined;
 
-  constructor(private router: Router, private dialog: MatDialog) {
-   
+  constructor(private router: Router, private dialog: MatDialog) {}
+
+  ngOnInit() {
+    this.routerSubscription = this.router.events.pipe(
+      filter(event => event instanceof NavigationEnd)
+    ).subscribe(() => {
+      this.isMenuOpen = false;
+    });
   }
 
-  toggleMenu() {
-    this.isMenuOpen = !this.isMenuOpen;
+  ngOnDestroy() {
+    if (this.routerSubscription) {
+      this.routerSubscription.unsubscribe();
+    }
   }
-
   navigateToHome() {
     this.router.navigate(['/']);
   }
@@ -35,5 +46,9 @@ export class HeaderComponent {
       width: '600px',
       // ... outras opções
     });
+  }
+
+  toggleMenu() {
+    this.isMenuOpen = !this.isMenuOpen;
   }
 }

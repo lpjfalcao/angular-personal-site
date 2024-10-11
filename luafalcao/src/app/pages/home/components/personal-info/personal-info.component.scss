@@ -53,7 +53,7 @@ mat-grid-tile {
 
   .cta-button {
     text-decoration: none;
-    color: $blue;
+    color: $white;
   }
 }
 
@@ -98,14 +98,14 @@ svg {
   cursor: pointer;
   outline: none;
   
-  color: $blue !important;
+  color: $white !important;
   background-color: rgba(3, 233, 244, 0.05) !important;
-  border-color: $blue;
+  border-color: $white;
   box-shadow: $blue-shadow;
   text-shadow: $blue-shadow;
 
   &:hover {
-    background-color: rgba(3, 233, 244, 0.05);
+    background-color: rgba(255, 222, 255, 1);
   }
   
   &:active {
