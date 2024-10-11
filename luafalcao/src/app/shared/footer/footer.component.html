@@ -1,13 +1,13 @@
 <footer class="footer">
     <div class="footer-links">
-      <a routerLink="/sobre">Sobre</a>
-      <a routerLink="/contato">Contato</a>
+      <a routerLink="/sobre" routerLinkActive="active">Sobre</a>
+      <a (click)="abrirModal()">Contato</a>
       <a href="https://www.linkedin.com/in/luafalcao/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
       <a href="https://github.com/lpjfalcao" target="_blank" rel="noopener noreferrer">GitHub</a>
     </div>
     <div class="footer-content">
       <div class="footer-logo">
-        <h2>Luã Falcão</h2>
+        <h2 (click)="navigateToHome()">Luã Falcão</h2>
       </div>
       <div class="footer-description">
         <p>Luã Falcão é um profissional de TI com {{ yearsOfExperience }} anos de experiência no desenvolvimento de aplicações empresariais onde vem atuando em diferentes projetos como Full-Stack, Front-end e Back-end com adoção de métodos ágeis e tecnologias web e mobile.</p>

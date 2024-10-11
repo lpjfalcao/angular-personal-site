@@ -86,3 +86,24 @@
       }
     }
   }
+
+  /* Remove a linha de foco padrão */
+::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline {
+    color: transparent !important;
+  }
+  
+  /* Remove a animação de foco */
+  ::ng-deep .mat-form-field-appearance-outline.mat-focused .mat-form-field-outline-thick {
+    color: transparent !important;
+  }
+  
+  /* Opcional: se quiser remover também a borda quando não está em foco */
+  ::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline-start,
+  ::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline-end {
+    border-width: 0 !important;
+  }
+  
+  /* Opcional: se quiser manter alguma indicação visual de foco, você pode adicionar uma sombra sutil */
+  ::ng-deep .mat-form-field-appearance-outline.mat-focused .mat-form-field-wrapper {
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+  }

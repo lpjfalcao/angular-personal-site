@@ -25,10 +25,10 @@ export class ModalComponent {
     private contactService: ContactServiceService
   ) {
     this.formContato = this.fb.group({
-      nome: ['', Validators.required],
-      email: ['', [Validators.required, Validators.email]],
-      telefone: ['', Validators.required],
-      mensagem: ['', Validators.required]
+      nome: ['Luã Falcão', Validators.required],
+      email: ['lpjfalcao@gmail.com', [Validators.required, Validators.email]],
+      telefone: ['21 974737079', Validators.required],
+      mensagem: ['Hello World! Form is working!', Validators.required]
     });
   }
 
