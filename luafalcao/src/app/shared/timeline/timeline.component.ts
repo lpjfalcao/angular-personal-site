@@ -43,12 +43,12 @@ export class TimelineComponent {
     {
       logo: 'assets/img/agile-content.png',
       description: 'Na Agile Content atuei remotamente colaborando como Desenvolvedor Full-Stack em um projeto de e-commerce para o cliente Personal. Tive mais contato com o ecossistema JavaScript desenvolvendo funcionalidades em Node.js, incluindo mecanismo de autorização de APIs com o padrão JWT, além de construir interfaces de usuário com HTML5, CSS3 e jQuery. Também adquiri experiência com uso do Docker e provisionamento de infraestrutura na AWS. Para efetuar as entregas de código fiz uso do Git como controle de versão.',
-      year: '2022'
+      year: '2021'
     },
     {
       logo: 'assets/img/wipro.png',
       description: `Wipro é uma multinacional de origem indiana onde tive a oportunidade de atuar em diferentes projetos. Enquanto estive alocado em um projeto de prevenção a fraudes do Banco Itaú durante 1 ano e 4 meses, atuei como Desenvolvedor Full-Stack, desenvolvendo APIs com a plataforma .NET, realizando melhorias na arquitetura do sistema e a construção de Interfaces de Usuário com o framework Angular.`,
-      year: '2024'
+      year: '2022'
     }
   ]
 
