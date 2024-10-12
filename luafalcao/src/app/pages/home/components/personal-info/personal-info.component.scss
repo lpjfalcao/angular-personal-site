@@ -35,7 +35,7 @@ mat-grid-tile {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  padding: 20px;
+  // padding: 20px;
 }
 
 .main {
@@ -150,5 +150,11 @@ svg {
     padding: 10px; // Reduz o padding em telas menores
     padding-top: 60px;
     padding-left: 90px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .tile-content {
+    padding-left: 20px;
   }
 }
