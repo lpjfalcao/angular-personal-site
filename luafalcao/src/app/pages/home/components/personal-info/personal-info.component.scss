@@ -92,17 +92,17 @@ svg {
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: 500;
-  border: 1px solid rgba(3, 233, 244, 0.3);
+  border: 1px solid rgba(3, 255, 255, 0.3);
   border-radius: 4px;
   transition: all 0.3s ease;
   cursor: pointer;
   outline: none;
   
   color: $white !important;
-  background-color: rgba(3, 233, 244, 0.05) !important;
+  background-color: rgba(255, 255, 255, 0.05) !important;
   border-color: $white;
-  box-shadow: $blue-shadow;
-  text-shadow: $blue-shadow;
+  box-shadow: $white-shadow;
+  text-shadow: $white-shadow;
 
   &:hover {
     background-color: rgba(255, 222, 255, 1);
@@ -136,7 +136,7 @@ svg {
   }
 
   .subtle-neon-button {
-    min-width: 100px;
+    min-width: 170px;
     font-size: 12px;
   }
 

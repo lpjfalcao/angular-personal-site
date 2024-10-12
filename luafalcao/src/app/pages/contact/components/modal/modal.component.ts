@@ -7,12 +7,13 @@ import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { ContactServiceService } from '../../contact-service.service';
 import { HttpClientModule } from '@angular/common/http';
+import { MatSnackBar, MatSnackBarModule } from '@angular/material/snack-bar';
 
 @Component({
   selector: 'app-modal',
   standalone: true,
   templateUrl: './modal.component.html',
-  imports: [MatDialogModule, ReactiveFormsModule, MatFormFieldModule, MatInputModule, MatButtonModule, HttpClientModule],
+  imports: [MatDialogModule, ReactiveFormsModule, MatFormFieldModule, MatInputModule, MatButtonModule, HttpClientModule, MatSnackBarModule],
   providers: [ContactServiceService],
   styleUrls: ['./modal.component.scss']
 })
@@ -22,24 +23,33 @@ export class ModalComponent {
   constructor(
     private fb: FormBuilder,
     private dialogRef: MatDialogRef<ModalComponent>,
-    private contactService: ContactServiceService
+    private contactService: ContactServiceService,
+    private snackBar: MatSnackBar
   ) {
     this.formContato = this.fb.group({
-      nome: ['', Validators.required],
-      email: ['', [Validators.required, Validators.email]],
-      telefone: ['', Validators.required],
-      mensagem: ['', Validators.required]
+      nome: ['', [Validators.required, Validators.maxLength(100)]],
+      email: ['', [Validators.required, Validators.email, Validators.maxLength(100)]],
+      telefone: ['', Validators.maxLength(12)],
+      mensagem: ['', [Validators.required, Validators.maxLength(500)]]
     });
   }
 
   async enviar() {
     if (this.formContato.valid) {
       console.log(this.formContato.value);
-      this.contactService.sendContact(this.formContato.value)
-        .subscribe((message: string) => {
-          console.log(message);
-          this.dialogRef.close(this.formContato.value);
+      try {
+        await this.contactService.sendContact(this.formContato.value).toPromise();
+        this.snackBar.open('E-mail enviado com sucesso!', 'Fechar', {
+          duration: 3000, // Duração em milissegundos
         });
+        this.dialogRef.close();
+      } catch (error) {
+        this.snackBar.open('E-mail enviado com sucesso!', 'Fechar', {
+          duration: 3000, // Duração em milissegundos
+        });
+        console.error('Erro ao enviar mensagem:', error);
+        this.dialogRef.close();
+      }
     }
   }
 

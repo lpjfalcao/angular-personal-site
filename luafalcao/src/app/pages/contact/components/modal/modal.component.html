@@ -5,26 +5,34 @@
         <mat-form-field appearance="outline">
           <mat-label>Nome</mat-label>
           <input matInput formControlName="nome" placeholder="Seu nome">
+          <mat-error *ngIf="formContato.get('nome').hasError('required')">Nome é obrigatório</mat-error>
+          <mat-error *ngIf="formContato.get('nome').hasError('maxlength')">Nome deve ter no máximo 100 caracteres</mat-error>
         </mat-form-field>
   
         <mat-form-field appearance="outline">
           <mat-label>E-mail</mat-label>
           <input matInput formControlName="email" placeholder="seu@email.com" type="email">
+          <mat-error *ngIf="formContato.get('email').hasError('required')">E-mail é obrigatório</mat-error>
+          <mat-error *ngIf="formContato.get('email').hasError('email')">E-mail inválido</mat-error>
+          <mat-error *ngIf="formContato.get('email').hasError('maxlength')">E-mail deve ter no máximo 100 caracteres</mat-error>
         </mat-form-field>
   
         <mat-form-field appearance="outline">
           <mat-label>Telefone</mat-label>
           <input matInput formControlName="telefone" placeholder="(00) 00000-0000">
+          <mat-error *ngIf="formContato.get('telefone').hasError('maxlength')">Telefone deve ter no máximo 15 caracteres</mat-error>
         </mat-form-field>
   
         <mat-form-field appearance="outline">
           <mat-label>Mensagem</mat-label>
           <textarea matInput formControlName="mensagem" rows="4" placeholder="Digite sua mensagem aqui"></textarea>
+          <mat-error *ngIf="formContato.get('mensagem').hasError('required')">Mensagem é obrigatória</mat-error>
+          <mat-error *ngIf="formContato.get('mensagem').hasError('maxlength')">Mensagem deve ter no máximo 500 caracteres</mat-error>
         </mat-form-field>
       </form>
     </mat-dialog-content>
     <mat-dialog-actions align="end">
-        <button mat-button (click)="fechar()" class="btn-cancelar">Cancelar</button>
-        <button mat-raised-button color="primary" class="btn-enviar" (click)="enviar()">Salvar</button>
-      </mat-dialog-actions>
+      <button mat-button (click)="fechar()" class="btn-cancelar">Cancelar</button>
+      <button mat-raised-button color="primary" class="btn-enviar" (click)="enviar()" [disabled]="formContato.invalid">Enviar</button>
+    </mat-dialog-actions>
   </div>

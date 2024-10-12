@@ -80,13 +80,23 @@ h1 {
   }
   
   @media (max-width: 768px) {
+     h1 {
+      font-size: 1.5em !important;
+     }
+
+     .stat-value, .stat-label {
+      font-size: 18px !important;
+     }
+
     .global-learning-container {
       flex-direction: column;
+      padding-top: 0;
     }
   
     .content {
       padding-right: 0;
       padding-left: 0;
+      margin-top: 10px;
       margin-bottom: 2rem;
     }
   
@@ -96,6 +106,10 @@ h1 {
   
     .stats-grid {
       grid-template-columns: 1fr;
+    }
+
+    .text-description p {
+      font-size: 14px;
     }
   }
 

@@ -1,8 +1,16 @@
 <div class="companies-container">
     <h1 class="titulo-com-sombra">EMPRESAS ONDE TRABALHEI</h1>
-    <div class="empresas-container">
-        <div class="empresa" *ngFor="let empresa of empresas">
-        <img [src]="empresa.logo" [alt]="empresa.nome" (click)="redirecionarParaEmpresa(empresa.url)">
-        </div>
-    </div>
+    <br /><br />
+    <p-carousel [value]="empresas" 
+                [numVisible]="4" 
+                [numScroll]="1" 
+                [circular]="true" 
+                [autoplayInterval]="0"
+                [responsiveOptions]="responsiveOptions">
+        <ng-template let-empresa pTemplate="item">
+            <div class="empresa">
+                <img [src]="empresa.logo" [alt]="empresa.nome" (click)="redirecionarParaEmpresa(empresa.url)">
+            </div>
+        </ng-template>
+    </p-carousel>
 </div>

@@ -8,10 +8,10 @@ export class ContactServiceService {
 
   constructor(private http: HttpClient) { }
 
-  sendContact(contactData: any): Observable<string> {
-    return this.http.post('https://1hqy3bq760.execute-api.us-west-1.amazonaws.com/contact/send', contactData, { responseType: 'text' })
+  sendContact(contactData: any): Observable<any> {
+    return this.http.post('https://ronremzc83.execute-api.us-west-1.amazonaws.com/dev/contact', contactData)
       .pipe(
-        map((response: any) => response as string)
+        map((response: any) => response)
       );
   }
 }
