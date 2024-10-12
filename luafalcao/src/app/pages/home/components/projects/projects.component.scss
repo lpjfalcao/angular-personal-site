@@ -41,3 +41,45 @@ h1 {
     text-align: center;
   }
 }
+
+.ver-mais-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.ver-mais-btn {
+  font-size: 1.1rem;
+  padding: 0.5rem 1.5rem;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+  &:hover {
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+  }
+
+  mat-icon {
+    margin-left: 0.5rem;
+    vertical-align: middle;
+  }
+}
+
+.ver-mais-btn {
+  background-color: #007bff; /* Cor de fundo azul */
+  color: white; /* Texto branco */
+  border: none; /* Remove a borda */
+  padding: 10px 20px; /* Espaçamento interno */
+  font-size: 16px; /* Tamanho da fonte */
+  font-weight: bold; /* Texto em negrito */
+  text-transform: uppercase; /* Texto em maiúsculas */
+  border-radius: 5px; /* Cantos arredondados */
+  cursor: pointer; /* Cursor de mão ao passar o mouse */
+  transition: background-color 0.3s ease; /* Transição suave para o hover */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra sutil */  
+  margin-bottom: 100px;
+}
+
+.ver-mais-btn:hover {
+  background-color: #0056b3; /* Cor mais escura ao passar o mouse */
+}
