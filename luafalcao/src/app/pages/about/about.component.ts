@@ -20,10 +20,10 @@ export class AboutComponent {
   subDescription2 = 'Tenho experiência com o desenvolvimento de interfaces de usuário, Web APIs e aplicativos onde trabalhei com diferentes tecnologias, incluindo C#, .NET, SQL, SQL Server, AWS, Azure, GIT, HTML5, CSS3, JavaScript, Angular, Node.JS, entre outras.';
   subDescription3 = 'Algumas empresas e órgãos que atendi foram Banco Itaú, Akad Seguros, Braslight Seguros, Capemisa Seguros, Oi, PRODERJ, PROCON, Eletros, Prudential do Brasil e Personal.';
   stats = [
-    { value: `${this.yearsOfExperience}+`, label: 'Anos de experiência' },
-    { value: '13+', label: 'Projetos concluídos' },
-    { value: '8+', label: 'Empresas onde colaborei' },
-    { value: '2K', label: 'Usuários ativos' }
+    { value: `+${this.yearsOfExperience}`, label: 'Anos de experiência' },
+    { value: '+12', label: 'Projetos concluídos' },
+    { value: '+8', label: 'Empresas onde colaborei' },
+    { value: '+2K', label: 'Usuários atendidos' }
   ];
   
   constructor(@Inject(PLATFORM_ID) private platformId: Object){

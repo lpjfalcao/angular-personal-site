@@ -6,6 +6,17 @@
 // Importe o tema pré-construído diretamente
 @import '@angular/material/prebuilt-themes/deeppurple-amber.css';
 
+// variáveis de cores e fontes
+$blue: #007bff;
+$blue-shadow:  0 0 15px rgba(0, 123, 255, 0.5);
+$white: #fff;
+$white-shadow:  0 0 15px rgba(255, 255, 255, 0.5);
+$silver: silver;
+
+$font-size-h1-mobile: 2rem;    // 32px
+$font-size-h2-mobile: 1.5rem;  // 24px
+$font-size-p-mobile: 1rem;   
+
 // Defina a fonte Open Sans globalmente
 body, html {
   font-family: 'Open Sans', sans-serif !important;
@@ -19,6 +30,10 @@ body {
 // Força todos os elementos a herdar a fonte
 * {
   font-family: inherit !important;
+}
+
+.mat-toolbar {
+  border-top-style: solid;
 }
 
 // Sobrescreve a fonte padrão do Material
@@ -48,9 +63,8 @@ body {
     font-family: 'Material Icons' !important;
 }
 
+.u-hide{
+  display: none;
+}
 
-$blue: #007bff;
-$blue-shadow:  0 0 15px rgba(0, 123, 255, 0.5);
-$white: #fff;
-$white-shadow:  0 0 15px rgba(255, 255, 255, 0.5);
-$silver: silver
+
