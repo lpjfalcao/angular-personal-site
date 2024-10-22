@@ -15,13 +15,8 @@ import { SpinnerService } from './shared/spinner/spinner.service';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  isLoading$ = this.loadingService.isLoading$;
+  // isLoading$ = this.loadingService.isLoading$;
 
-  constructor(private loadingService: SpinnerService) {}
+  // constructor(private loadingService: SpinnerService) {}
 
-  ngAfterViewInit() {
-    setTimeout(() => {
-      this.loadingService.setLoading(false);
-    }, 1500);
-  }
 }

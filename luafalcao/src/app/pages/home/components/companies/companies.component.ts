@@ -14,14 +14,14 @@ export class CompaniesComponent {
   @ViewChild('carousel') carousel: Carousel | undefined;
 
   empresas = [
-    { nome: 'First Decision', logo: 'assets/img/fd-logo.png', url: 'https://www.firstdecision.com.br/' },
-    { nome: 'ATSNET Soluções em TI', logo: 'assets/img/atsnet-logo.svg', url: 'https://www.atsnet.com.br/' },
-    { nome: 'Infobase IT', logo: 'assets/img/infobase-logo.png', url: 'https://www.infobase.com.br/' },
-    { nome: 'IBM', logo: 'assets/img/ibm-logo.png', url: 'https://www.ibm.com/' },
-    { nome: 'Perlink', logo: 'assets/img/perlink-logo.png', url: 'https://www.perlink.com.br/' },
-    { nome: 'Alterdata Software', logo: 'assets/img/alterdata-logo.png', url: 'https://www.alterdata.com.br/' },
-    { nome: 'Agile Content', logo: 'assets/img/agile-content.png', url: 'https://www.agilecontent.com/' },
-    { nome: 'Wipro', logo: 'assets/img/wipro.png', url: 'https://www.wipro.com/' },
+    { nome: 'First Decision', logo: 'https://luafalcao-site-pessoal.s3.amazonaws.com/images/fd-logo.png', url: 'https://www.firstdecision.com.br/' },
+    { nome: 'ATSNET Soluções em TI', logo: 'https://luafalcao-site-pessoal.s3.amazonaws.com/images/atsnet-logo.svg', url: 'https://www.atsnet.com.br/' },
+    { nome: 'Infobase IT', logo: 'https://luafalcao-site-pessoal.s3.amazonaws.com/images/infobase-logo.png', url: 'https://www.infobase.com.br/' },
+    { nome: 'IBM', logo: 'https://luafalcao-site-pessoal.s3.amazonaws.com/images/ibm-logo.png', url: 'https://www.ibm.com/' },
+    { nome: 'Perlink', logo: 'https://luafalcao-site-pessoal.s3.amazonaws.com/images/perlink-logo.png', url: 'https://www.perlink.com.br/' },
+    { nome: 'Alterdata Software', logo: 'https://luafalcao-site-pessoal.s3.amazonaws.com/images/alterdata-logo.png', url: 'https://www.alterdata.com.br/' },
+    { nome: 'Agile Content', logo: 'https://luafalcao-site-pessoal.s3.amazonaws.com/images/agile-content.png', url: 'https://www.agilecontent.com/' },
+    { nome: 'Wipro', logo: 'https://luafalcao-site-pessoal.s3.amazonaws.com/images/wipro.png', url: 'https://www.wipro.com/' },
   ];
 
   responsiveOptions = [

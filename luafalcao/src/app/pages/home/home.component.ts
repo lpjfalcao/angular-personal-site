@@ -7,18 +7,20 @@ import { HeaderComponent } from '../../shared/header/header.component';
 import { FooterComponent } from '../../shared/footer/footer.component';
 import { isPlatformBrowser } from '@angular/common';
 import { PLATFORM_ID } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
+import { HomeService } from './home.service';
 
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [PersonalInfoComponent, ProjectsComponent, CompaniesComponent, TechnologiesComponent, HeaderComponent, FooterComponent],
+  imports: [PersonalInfoComponent, ProjectsComponent, CompaniesComponent, TechnologiesComponent, HeaderComponent, FooterComponent, HttpClientModule],
+  providers: [HomeService],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
 export class HomeComponent {
-  constructor(@Inject(PLATFORM_ID) private platformId: Object){
-
+  constructor(@Inject(PLATFORM_ID) private platformId: Object, private homeService: HomeService){
   }
 
   ngOnInit() {

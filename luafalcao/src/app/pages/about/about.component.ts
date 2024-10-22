@@ -15,10 +15,10 @@ import { MatIconModule } from '@angular/material/icon';
 export class AboutComponent {
   yearsOfExperience = new Date().getFullYear() - 2014;
   title = 'Sobre mim';
-  description = `Tenho 31 anos, sou formado em Análise e Desenvolvimento de Sistemas pela Unicarioca, faço Pós-Graduação em Cloud Computing com foco em AWS na mesma instituição e tenho ${this.yearsOfExperience} anos de experiência no mercado de TI onde venho colaborando em diversos projetos para diferentes empresas.`;
-  subDescription = 'Desde 2014 venho colaborando em projetos de software, com experiência como Desenvolvedor Back-end, Front-end e Full-Stack, onde tive a oportunidade de trabalhar com metodologias ágeis, incluindo Scrum e XP, e participar de projetos em diferentes segmentos, incluindo seguros, financeiro, jurídico e administrativo.';
-  subDescription2 = 'Tenho experiência com o desenvolvimento de interfaces de usuário, Web APIs e aplicativos onde trabalhei com diferentes tecnologias, incluindo C#, .NET, SQL, SQL Server, AWS, Azure, GIT, HTML5, CSS3, JavaScript, Angular, Node.JS, entre outras.';
-  subDescription3 = 'Algumas empresas e órgãos que atendi foram Banco Itaú, Akad Seguros, Braslight Seguros, Capemisa Seguros, Oi, PRODERJ, PROCON, Eletros, Prudential do Brasil e Personal.';
+  description = `Profissional de TI experiente e versátil, com 31 anos e uma sólida trajetória de 10 anos no mercado. Graduado em Análise e Desenvolvimento de Sistemas pela Unicarioca, atualmente aprofundando conhecimentos em Cloud Computing com foco em AWS através de uma Pós-Graduação na mesma instituição.`;
+  subDescription = 'Minha carreira é marcada por uma impressionante diversidade de projetos e tecnologias. Desde 2014, venho me destacando como Desenvolvedor Back-end, Front-end e Full-Stack, trabalhando com metodologias ágeis como Scrum e XP. Minha experiência abrange setores críticos como seguros, financeiro, jurídico e administrativo, proporcionando-me uma visão holística e estratégica do desenvolvimento de software.';
+  subDescription2 = 'Minha expertise técnica é abrangente e atualizada, incluindo C#, .NET, SQL, SQL Server, AWS, Azure, GIT, HTML5, CSS3, JavaScript, Angular e Node.JS. Esta versatilidade me permite criar soluções robustas e inovadoras, desde interfaces de usuário intuitivas até Web APIs complexas e aplicativos de alto desempenho.';
+  subDescription3 = 'Ao longo da minha carreira, tive o privilégio de colaborar com empresas líderes de mercado e instituições renomadas, incluindo Banco Itaú, Akad Seguros, Braslight Seguros, Capemisa Seguros, Oi, JUCERJA, PRODERJ, PROCON, Eletros, Prudential do Brasil e Personal. Essas experiências não apenas aprimoraram minhas habilidades técnicas, mas também desenvolveram minha capacidade de adaptação a diferentes culturas corporativas e desafios de negócios.';
   stats = [
     { value: `+${this.yearsOfExperience}`, label: 'Anos de experiência' },
     { value: '+12', label: 'Projetos concluídos' },

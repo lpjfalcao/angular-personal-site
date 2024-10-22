@@ -28,6 +28,7 @@ h1 {
       color: #333;
       margin-bottom: 1rem;
       font-weight: bold;
+      text-align: left;
     }
   
     p {
@@ -82,6 +83,7 @@ h1 {
   @media (max-width: 768px) {
      h1 {
       font-size: 1.5em !important;
+      text-align: center !important;
      }
 
      .stat-value, .stat-label {
