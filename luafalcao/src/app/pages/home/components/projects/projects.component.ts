@@ -19,27 +19,23 @@ export class ProjectsComponent {
   public personalProjects: any[] = [];
 
   constructor(private homeService: HomeService) {
-   
+    console.log(`Versão 1.0.0 - ${new Date()}`);
   }
 
   async ngOnInit() {
-    
     try {
-      const projects = await this.homeService.getAllProjects();
-      for(const project of projects as any)
+      this.homeService.getAllProjects().subscribe((data) =>
       {
-        this.mainProjects.push(project);
-      }
-
-      this.mainProjects.sort((a,b) => a.id - b.id);
-
-      for(var i = 0; i < 3; i++)
-        this.personalProjects.push(this.mainProjects.pop());
-    }
-    catch(err) {
+        this.mainProjects = data as any[]; 
+        this.mainProjects.sort((a, b) => a.id - b.id);
+        this.personalProjects = this.mainProjects.slice(-3); 
+        this.mainProjects = this.mainProjects.slice(0, this.mainProjects.length - 3); 
+      }); 
+     
+    } catch (err) {
       console.log(err);
     }
-   }
+  }
 
 
   showProjects() {

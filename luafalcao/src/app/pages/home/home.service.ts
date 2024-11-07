@@ -10,8 +10,8 @@ export class HomeService {
 
     }
 
-    async getAllProjects() {
-        return await this.httpClient.get('https://ronremzc83.execute-api.us-west-1.amazonaws.com/dev/projects').toPromise();
+    getAllProjects() {
+        return this.httpClient.get('https://ronremzc83.execute-api.us-west-1.amazonaws.com/dev/projects');
     }
 }
 

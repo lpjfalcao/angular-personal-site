@@ -1,0 +1,8 @@
+<div class="image-grid">
+    <div class="image-card" *ngFor="let project of projectList">
+        <img [src]="project.img" alt="Imagem" class="zoom-image">
+        <div class="caption">
+            <span>{{ project.caption }}</span>
+        </div>
+    </div>
+</div>

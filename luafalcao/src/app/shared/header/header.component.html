@@ -9,6 +9,7 @@
     <!-- Envolvendo a navegação em um div para controle de exibição -->
     <div class="nav-container" [class.nav-open]="isMenuOpen">
       <nav>
+        <a mat-button routerLink="/projetos" routerLinkActive="active">Projetos</a>
         <a mat-button routerLink="/sobre" routerLinkActive="active">Sobre</a>
         <a mat-button (click)="abrirModal()">Contato</a>
         <a mat-button href="https://www.linkedin.com/in/luafalcao/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
