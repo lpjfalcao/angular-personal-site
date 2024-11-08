@@ -1,36 +1,20 @@
 <div class="projects-container">
     <h1 class="titulo-com-sombra">PROJETOS</h1>
     <div class="projects-grid">
-      <app-project-card *ngFor="let project of mainProjects"
+      <app-project-card *ngFor="let project of projects"
         [imageSrc]="project.imagem"
         [title]="project.nome"
         [description]="project.descricao"
         [projectType]="project.tipo"
         [projectLink]="project.link"
         [projectTypeStyle]="project.tipo.toLowerCase()">
-      </app-project-card>
-      
-  
-      <!-- Cards adicionais (ocultos inicialmente) -->
-      <ng-container *ngIf="showAllProjects">
-        <!-- Adicione mais cards de projeto aqui -->
-        <app-project-card *ngFor="let project of personalProjects"
-          [imageSrc]="project.imagem"
-          [title]="project.nome"
-          [description]="project.descricao"
-          [projectType]="project.tipo"
-          [projectLink]="project.link"
-          [projectTypeStyle]="project.tipo.toLowerCase()">
-      </app-project-card>
-      
-      </ng-container>
+      </app-project-card>    
     </div>
-  </div>
+</div>
 
   <!-- Botão "Ver mais" -->
   <div class="ver-mais-container">
-    <button mat-raised-button color="primary" class="ver-mais-btn" (click)="showProjects()" *ngIf="!showAllProjects">
+    <button mat-raised-button color="primary" class="ver-mais-btn" (click)="goToProjects()">
      Ver mais
-      <mat-icon>{{ 'expand_more'}}</mat-icon>
     </button>
   </div>
