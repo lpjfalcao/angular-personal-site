@@ -3,18 +3,21 @@ import { ProjectGridComponent } from '../../shared/cards/project-grid/project-gr
 import { ProjectsService } from './projects.service';
 import { HttpClientModule } from '@angular/common/http';
 import { Router } from '@angular/router';
+import { SpinnerComponent } from '../../shared/spinner/spinner.component';
+import { CommonModule } from '@angular/common';
 
 
 @Component({
   selector: 'app-projects',
   standalone: true,
-  imports: [ProjectGridComponent, HttpClientModule],
+  imports: [ProjectGridComponent, HttpClientModule, SpinnerComponent, CommonModule],
   providers: [ProjectsService],
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.scss'
 })
 export class ProjectsComponent {
   projectList: any[] = []
+  isLoading: boolean = true;
 
   constructor(private projectService: ProjectsService, private router: Router) {
     
@@ -33,6 +36,9 @@ export class ProjectsComponent {
         });        
       }      
       this.projectList.sort((a, b) => a.id - b.id);
+      setTimeout(() => {
+        this.isLoading = false;
+      }, 1000);
     })
   }
 
