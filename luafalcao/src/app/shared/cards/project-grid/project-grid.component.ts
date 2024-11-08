@@ -1,54 +1,25 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
+
 
 @Component({
   selector: 'app-project-grid',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, MatButtonModule, MatIconModule],
   templateUrl: './project-grid.component.html',
   styleUrl: './project-grid.component.scss'
 })
 export class ProjectGridComponent {
-  projectList: any[] = [];
+  @Input() projectList: any[] = [];
+  @Output() openLinkEvent = new EventEmitter<string>();
 
   ngOnInit() {
-    this.projectList = [
-      {
-        img: 'https://picsum.photos/600/480',
-        caption: 'Projeto 1'
-      },
-      {
-        img: 'https://picsum.photos/600/480',
-        caption: 'Projeto 1'
-      },
-      {
-        img: 'https://picsum.photos/600/480',
-        caption: 'Projeto 1'
-      },
-      {
-        img: 'https://picsum.photos/600/480',
-        caption: 'Projeto 2'
-      },
-      {
-        img: 'https://picsum.photos/600/480',
-        caption: 'Projeto 3'
-      },
-      {
-        img: 'https://picsum.photos/600/480',
-        caption: 'Projeto 4'
-      },
-      {
-        img: 'https://picsum.photos/600/480',
-        caption: 'Projeto 5'
-      },
-      {
-        img: 'https://picsum.photos/600/480',
-        caption: 'Projeto 6'
-      },
-      {
-        img: 'https://picsum.photos/600/480',
-        caption: 'Projeto 7'
-      }
-    ]
+  
+  }
+
+  onClick(link: string) {
+    this.openLinkEvent.emit(link);
   }
 }

@@ -1,8 +1,19 @@
-<div class="image-grid">
-    <div class="image-card" *ngFor="let project of projectList">
-        <img [src]="project.img" alt="Imagem" class="zoom-image">
-        <div class="caption">
-            <span>{{ project.caption }}</span>
+<div class="container-master">
+    <div class="image-grid" *ngFor="let project of projectList">
+        <div class="image-card">
+            <img [src]="project.img" alt="Imagem" class="zoom-image">
+            <div class="caption">
+                <span>{{ project.type }}</span>
+            </div>
+        </div>
+        <div class="container-descricao-projeto">
+            <h1>{{ project.caption }}</h1>
+            <p>{{ project.description }}</p>
+            <br /><br />
+            <button mat-fab extended (click)="onClick(project.link)" *ngIf="project.link">
+               Ver projeto
+              <mat-icon>open_in_new</mat-icon>
+              </button>        
         </div>
     </div>
 </div>

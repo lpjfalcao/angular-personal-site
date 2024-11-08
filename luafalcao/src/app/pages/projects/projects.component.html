@@ -1,8 +1,6 @@
 <div class="project-container">
     <h1>Projetos</h1>
-    <h2>Nesta seção você pode conferir os projetos em que colabrei enquanto 
-        estive alocado em diferentes empresas</h2>
-
-    <br>
-    <app-project-grid></app-project-grid>
+    <h2>Nesta seção você pode conferir os projetos em que colabrei enquanto estive alocado em diferentes empresas</h2>
+    <br><br>
+    <app-project-grid [projectList]="projectList" (openLinkEvent)="openLink($event)"></app-project-grid>
 </div>

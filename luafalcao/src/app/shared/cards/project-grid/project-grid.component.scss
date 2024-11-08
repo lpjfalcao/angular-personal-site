@@ -1,7 +1,10 @@
+@import '../../../../styles.scss';
+
 .image-grid {
-    display: flex; 
-    flex-wrap: wrap; 
-    justify-content: space-between; 
+    display: grid; 
+    grid-template-columns: 600px auto;
+    border-bottom: solid 1px silver;
+    margin-bottom: 26px;
 }
 
 .image-card {
@@ -9,23 +12,17 @@
     overflow: hidden; 
     width: 100%; 
     flex: 0 0 calc(50% - 10px); 
-    margin-bottom: 20px; 
+    margin-bottom: 23px; 
     border-radius: 8px;
 }
 
 .zoom-image {
     width: 100%; 
-    height: auto;
+    height: 300px;
     transition: filter 0.7s ease; 
     border-radius: 8px;
     object-fit: cover;
 }
-
-.zoom-image:hover {
-    filter: grayscale(100%);
-    cursor: pointer;
-}
-
 
 .caption {
     position: absolute; 
@@ -42,11 +39,39 @@
     border-bottom-right-radius: 8px;
 }
 
+p {
+    font-size: 16px;
+}
+
+button {
+    background-color: $blue;
+    color: $white;
+}
+
+.container-descricao-projeto {
+    margin-left: 50px;
+}
+
 
 @media (max-width: 768px) {
     .image-card {
         flex: auto; 
+        margin-bottom: 30px;
+        margin-top: 30px;
     }   
+
+    .image-grid {
+        display: grid; 
+        grid-template-columns: auto;
+    }       
     
+    .container-descricao-projeto {
+        margin-bottom: 40px;
+        margin-left: 10px;
+    }
+
+    .container-master {
+        margin-top: -70px;
+    }
 }
 
