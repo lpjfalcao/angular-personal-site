@@ -36,9 +36,7 @@ export class ProjectsComponent {
         });        
       }      
       this.projectList.sort((a, b) => a.id - b.id);
-      setTimeout(() => {
-        this.isLoading = false;
-      }, 1000);
+      this.isLoading = false;      
     })
   }
 
