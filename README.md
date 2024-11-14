@@ -1,7 +1,9 @@
-# angular-luafalcao
+# angular-personal-site
 
-Este projeto foi gerado com o Angular na versão 17 e é destinado para apresentação do meu
+Este projeto foi gerado com o Angular na versão 17 e é destinado para criação do meu site pessoal e portfólio.
 portfólio.
+
+Link do projeto: https://luafalcao.com
 
 ## Estrutura do projeto
 ```
