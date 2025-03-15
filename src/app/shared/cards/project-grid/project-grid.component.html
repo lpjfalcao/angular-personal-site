@@ -1,7 +1,7 @@
 <div class="container-master">
     <div class="image-grid" *ngFor="let project of projectList">
         <div class="image-card">
-            <img [src]="project.img" alt="Imagem" class="zoom-image">
+            <img [src]="project.img" alt="Imagem" class="zoom-image" [ngStyle]="{'object-fit': project.objectFit ? 'contain' : 'cover'}">
             <div class="caption">
                 <span>{{ project.type }}</span>
             </div>

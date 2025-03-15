@@ -28,42 +28,42 @@ export class ProjectsComponent {
       {
         imagem: 'https://luafalcao-site-pessoal.s3.amazonaws.com/images/jucerja.png',
         nome: 'Portal Web JUCERJA',
-        descricao: 'Enquanto estive alocado na Junta Comercial do Estado do Rio de Janeiro durante o período de 1 ano e 7 meses participei do projeto de migração tecnológica do seu Portal Web Institucional onde trabalhei com front-end criando interfaces de usuário com design responsivo em HTML5, CSS3, jQuery e ASP .NET MVC5.',
+        descricao: 'While I was allocated at the Commercial State of Rio de Janeiro for 1 year and 7 months, I participated in the technological migration project of its Institutional Web Portal where I worked with front-end creating user interfaces with design responsive in HTML5, CSS3, jQuery and ASP .NET MVC5.',
         tipo: 'FRONT-END',
         link: 'https://www.jucerja.rj.gov.br/'
       },
       {
         imagem: 'https://luafalcao-site-pessoal.s3.amazonaws.com/images/braslight.png',
         nome: 'Portal Web Braslight',
-        descricao: 'Fiz a migração tecnológica do Portal Web da Braslight Seguros durante 1 ano para uma tecnologia mais moderna, onde fiquei responsável pelo desenvolvimento de APIs com ASP .NET Web API e a construção de interfaces de usuário em AngularJS, HTML5, CSS3 e JavaScript. Também trabalhei com o Umbraco para gerenciamento de conteúdo das telas e ADO .NET e SQL Server para manipulação e armazenamento dos dados.',
+        descricao: 'I migrated the Braslight Seguros Web Portal to a more modern technology during 1 year, where I was responsible for developing APIs with ASP .NET Web API and building user interfaces in AngularJS, HTML5, CSS3 and JavaScript. I also worked with Umbraco for content management of the screens and ADO .NET and SQL Server for data manipulation and storage.',
         tipo: 'FULL-STACK',
         link: 'https://www.braslight.com.br/v3'
       },
       {
         imagem: 'https://luafalcao-site-pessoal.s3.amazonaws.com/images/econtador.png',
         nome: 'e-Contador',
-        descricao: 'Na empresa Alterdata fiquei responsável pelo desenvolvimento do app e-Contador, uma solução  para o setor contábil disponível para iPhones e iPads. Fiz a atualização do app na App Store além de implementar funcionalidades como Push Notifications usando o serviço Firebase Cloud Message, download de documentos e telemetria com uso do Google Analytics.',
+        descricao: 'At Alterdata I was responsible for the development of the e-Contador app, a solution for the accounting sector available for iPhones and iPads. I updated the app in the App Store and implemented features like Push Notifications using the Firebase Cloud Message service, document downloads and telemetry with the use of Google Analytics.',
         tipo: 'MOBILE',
         link: 'https://apps.apple.com/br/app/alterdata-e-contador/id1411356193'
       },
       {
         imagem: 'https://luafalcao-site-pessoal.s3.amazonaws.com/images/meuproconrj.png',
         nome: 'Meu PROCON RJ',
-        descricao: 'Colaborei no desenvolvimento do app Meu PROCON RJ onde fiquei responsável pela construção de interfaces de usuário com design responsivo para plataformas Android e iOS, além de ajudar na publicação do aplicativo na App Store. Trabalhei com tecnologias como Phonegap, Cordova, HTML5, CSS3, JavaScript e Boostrap.',
+        descricao: 'I collaborated in the development of the Meu PROCON RJ app where I was responsible for building user interfaces with design responsive for Android and iOS platforms, and helped in the publication of the app in the App Store. I worked with technologies like Phonegap, Cordova, HTML5, CSS3, JavaScript and Boostrap.',
         tipo: 'MOBILE',
         link: 'http://www.procon.rj.gov.br/index.php/publicacao/detalhar/1573'
       },
       {
         imagem: 'https://luafalcao-site-pessoal.s3.amazonaws.com/images/capemisa.png',
         nome: 'Portal Web Capemisa',
-        descricao: 'Enquanto estive alocado na Capemisa Seguros fiquei responsável pela manutenção do seu Portal Web incluindo novos componentes na interface e fazendo integração com APIs para exibir informaçãoes relevantes para o usuário no sistema referente a locais de atendimento.',
+        descricao: 'While I was allocated at Capemisa Seguros I was responsible for the maintenance of their Web Portal including new components in the interface and integrating APIs to display relevant information to the user in the system related to service locations.',
         tipo: 'FULL-STACK',
         link: 'https://www.capemisa.com.br/'
       },
       {
         imagem: 'https://luafalcao-site-pessoal.s3.amazonaws.com/images/personal.png',
         nome: 'Personal Store',
-        descricao: 'Atuei como Full-Stack em um projeto de uma loja de distribuição de conteúdo online para o cliente Argentino Personal onde atuei desenvolvendo funcionalidades em Node.js como autorização de APIs e componentes de inteface de usuário para um gerenciador de conteúdo (CMS). Além disso fiz o provisionamento de infraestrutura na AWS usando a ferramenta Terraform e publiquei aplicações usando Docker nos serviços AWS ECR e AWS ECS.',
+        descricao: 'I worked as a Full-Stack in a project of an online content distribution store for the Argentinian customer Personal where I developed functionalities in Node.js like API authorization and user interface components for a content manager (CMS). In addition, I provisioned infrastructure in AWS using the Terraform tool and published applications using Docker in the AWS ECR and AWS ECS services.',
         tipo: 'FULL-STACK',
         link: 'https://tienda.personal.com.ar/'
       }    

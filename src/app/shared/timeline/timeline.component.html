@@ -2,7 +2,7 @@
     <div class="timeline-item" *ngFor="let item of timelineItems">
       <div class="timeline-content">
         <div class="timeline-img">
-          <img [src]="item.logo" alt="Logo Empresa 1">
+          <img [src]="item.logo" alt="Logo Empresa 1" [ngStyle]="{'height': item.height, 'width': item.width}">
         </div>
         <p [innerHTML]="item.description"></p>
       </div>

@@ -14,16 +14,16 @@ import { MatIconModule } from '@angular/material/icon';
 })
 export class AboutComponent {
   yearsOfExperience = new Date().getFullYear() - 2014;
-  title = 'Sobre mim';
-  description = `Profissional de TI experiente e versátil, com 31 anos e uma sólida trajetória de 10 anos no mercado. Graduado em Análise e Desenvolvimento de Sistemas pela Unicarioca, atualmente aprofundando conhecimentos em Cloud Computing com foco em AWS através de uma Pós-Graduação na mesma instituição.`;
-  subDescription = 'Minha carreira é marcada por uma impressionante diversidade de projetos e tecnologias. Desde 2014, venho me destacando como Desenvolvedor Back-end, Front-end e Full-Stack, trabalhando com metodologias ágeis como Scrum e XP. Minha experiência abrange setores críticos como seguros, financeiro, jurídico e administrativo, proporcionando-me uma visão holística e estratégica do desenvolvimento de software.';
-  subDescription2 = 'Minha expertise técnica é abrangente e atualizada, incluindo C#, .NET, SQL, SQL Server, AWS, Azure, GIT, HTML5, CSS3, JavaScript, Angular e Node.JS. Esta versatilidade me permite criar soluções robustas e inovadoras, desde interfaces de usuário intuitivas até Web APIs complexas e aplicativos de alto desempenho.';
-  subDescription3 = 'Ao longo da minha carreira, tive o privilégio de colaborar com empresas líderes de mercado e instituições renomadas, incluindo Banco Itaú, Akad Seguros, Braslight Seguros, Capemisa Seguros, Oi, JUCERJA, PRODERJ, PROCON, Eletros, Prudential do Brasil e Personal. Essas experiências não apenas aprimoraram minhas habilidades técnicas, mas também desenvolveram minha capacidade de adaptação a diferentes culturas corporativas e desafios de negócios.';
+  title = 'About me';
+  description = `Experienced and versatile professional, with 31 years and a solid trajectory of 10 years in the market. Graduated in Systems Analysis and Development from Unicarioca, currently deepening knowledge in Cloud Computing with a focus on AWS through a Post-Graduation at the same institution.`;
+  subDescription = 'My career is marked by an impressive diversity of projects and technologies. Since 2014, I have been standing out as a Back-end, Front-end and Full-Stack Developer, working with agile methodologies like Scrum and XP. My experience covers critical sectors such as insurance, finance, legal and administrative, providing me with a holistic and strategic vision of software development.';
+  subDescription2 = 'My technical expertise is comprehensive and up-to-date, including C#, .NET, SQL, SQL Server, AWS, Azure, Docker, GIT, HTML5, CSS3, JavaScript, Angular and Node.JS. This versatility allows me to create robust and innovative solutions, from intuitive user interfaces to complex Web APIs and high-performance applications.';
+  subDescription3 = 'Throughout my career, I have had the privilege of collaborating with leading market companies and renowned institutions, including IBM, Wipro, Banco Itaú, Akad Seguros, Braslight Seguros, Capemisa Seguros, Oi, JUCERJA, PRODERJ, PROCON, Eletros, Prudential do Brasil and Personal. These experiences not only improved my technical skills but also developed my ability to adapt to different corporate cultures and business challenges.';
   stats = [
-    { value: `+${this.yearsOfExperience}`, label: 'Anos de experiência' },
-    { value: '+12', label: 'Projetos concluídos' },
-    { value: '+8', label: 'Empresas onde colaborei' },
-    { value: '+2K', label: 'Usuários atendidos' }
+    { value: `+${this.yearsOfExperience - 1}`, label: 'Years of experience' },
+    { value: '+12', label: 'Completed projects' },
+    { value: '+9', label: 'Companies I collaborated with' },
+    { value: '+2K', label: 'Users served' }
   ];
   
   constructor(@Inject(PLATFORM_ID) private platformId: Object){

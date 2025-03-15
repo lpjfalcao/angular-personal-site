@@ -1,38 +1,38 @@
 <div class="contato-modal">
-    <h2 mat-dialog-title>Entre em Contato</h2>
+    <h2 mat-dialog-title>Fill the form to contact me by email</h2>
     <mat-dialog-content>
       <form [formGroup]="formContato">
         <mat-form-field appearance="outline">
-          <mat-label>Nome</mat-label>
-          <input matInput formControlName="nome" placeholder="Seu nome">
-          <mat-error *ngIf="formContato.get('nome').hasError('required')">Nome é obrigatório</mat-error>
-          <mat-error *ngIf="formContato.get('nome').hasError('maxlength')">Nome deve ter no máximo 100 caracteres</mat-error>
+          <mat-label>Name</mat-label>
+          <input matInput formControlName="nome" placeholder="Your name">
+          <mat-error *ngIf="formContato.get('nome').hasError('required')">Name is required</mat-error>
+          <mat-error *ngIf="formContato.get('nome').hasError('maxlength')">Name must have at maximum 100 characters</mat-error>
         </mat-form-field>
   
         <mat-form-field appearance="outline">
-          <mat-label>E-mail</mat-label>
-          <input matInput formControlName="email" placeholder="seu@email.com" type="email">
-          <mat-error *ngIf="formContato.get('email').hasError('required')">E-mail é obrigatório</mat-error>
-          <mat-error *ngIf="formContato.get('email').hasError('email')">E-mail inválido</mat-error>
-          <mat-error *ngIf="formContato.get('email').hasError('maxlength')">E-mail deve ter no máximo 100 caracteres</mat-error>
+          <mat-label>Email</mat-label>
+          <input matInput formControlName="email" placeholder="your@email.com" type="email">
+          <mat-error *ngIf="formContato.get('email').hasError('required')">Email is required</mat-error>
+          <mat-error *ngIf="formContato.get('email').hasError('email')">Invalid email</mat-error>
+          <mat-error *ngIf="formContato.get('email').hasError('maxlength')">Email must have at maximum 100 characters</mat-error>
         </mat-form-field>
   
         <mat-form-field appearance="outline">
-          <mat-label>Telefone</mat-label>
+          <mat-label>Phone</mat-label>
           <input matInput formControlName="telefone" placeholder="(00) 00000-0000">
-          <mat-error *ngIf="formContato.get('telefone').hasError('maxlength')">Telefone deve ter no máximo 15 caracteres</mat-error>
+          <mat-error *ngIf="formContato.get('telefone').hasError('maxlength')">Phone must have at maximum 15 characters</mat-error>
         </mat-form-field>
   
         <mat-form-field appearance="outline">
-          <mat-label>Mensagem</mat-label>
-          <textarea matInput formControlName="mensagem" rows="4" placeholder="Digite sua mensagem aqui"></textarea>
-          <mat-error *ngIf="formContato.get('mensagem').hasError('required')">Mensagem é obrigatória</mat-error>
-          <mat-error *ngIf="formContato.get('mensagem').hasError('maxlength')">Mensagem deve ter no máximo 500 caracteres</mat-error>
+          <mat-label>Message</mat-label>
+          <textarea matInput formControlName="mensagem" rows="4" placeholder="Write your message here"></textarea>
+          <mat-error *ngIf="formContato.get('mensagem').hasError('required')">Message is required</mat-error>
+          <mat-error *ngIf="formContato.get('mensagem').hasError('maxlength')">Message must have at maximum 500 characters</mat-error>
         </mat-form-field>
       </form>
     </mat-dialog-content>
     <mat-dialog-actions align="end">
-      <button mat-button (click)="fechar()" class="btn-cancelar">Cancelar</button>
-      <button mat-raised-button color="primary" class="btn-enviar" (click)="enviar()" [disabled]="formContato.invalid">Enviar</button>
+      <button mat-button (click)="fechar()" class="btn-cancelar">Cancel</button>
+      <button mat-raised-button color="primary" class="btn-enviar" (click)="enviar()" [disabled]="formContato.invalid">Send</button>
     </mat-dialog-actions>
   </div>

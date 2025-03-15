@@ -18,6 +18,7 @@ import { CommonModule } from '@angular/common';
 export class ProjectsComponent {
   projectList: any[] = []
   isLoading: boolean = true;
+  fit: number[] = [ 13, 14, 16 ];
 
   constructor(private projectService: ProjectsService, private router: Router) {
     
@@ -32,7 +33,8 @@ export class ProjectsComponent {
           id: project.id,
           description: project.descricao,
           link: project.link,
-          type: project.tipo
+          type: project.tipo,
+          objectFit: this.fit.includes(parseInt(project.id))
         });        
       }      
       this.projectList.sort((a, b) => a.id - b.id);

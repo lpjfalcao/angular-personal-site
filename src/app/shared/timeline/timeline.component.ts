@@ -12,45 +12,66 @@ export class TimelineComponent {
   timelineItems: any[] = [
     {
       logo: 'https://luafalcao-site-pessoal.s3.amazonaws.com/images/fd-logo.png',
-      description: 'Em 2014 realizei o meu primeiro estágio na First Decision Tecnologias Inovadoras, uma empresa no ramo de BI, onde fiz parte da equipe de desenvolvimento mobile trabalhando com tecnologias web e a plataforma Apache Cordova para construir apps e protótipos para Android e iOS. Realizei trabalhos para órgãos como PROCON e PRODERJ.',
-      year: '2014'
+      description: 'In 2014 I did my first internship at First Decision Tecnologias Inovadoras, a company in the BI sector, where I was part of the mobile development team working with web technologies and the Apache Cordova platform to build apps and prototypes for Android and iOS. I also worked for organizations like PROCON and PRODERJ.',
+      year: '2014',
+      height: 'auto',
+      width: '200px'
     },
     {
       logo: 'https://luafalcao-site-pessoal.s3.amazonaws.com/images/atsnet-logo.svg',
-      description: 'Em 2015 ingressei na ATSNET Soluções em TI e fiquei alocado em projetos na Junta Comercial do Estado do Rio de Janeiro, onde melhorei minhas habilidades de front-end e tive contato pela primeira vez com a platatorma .NET e a linguagem de programação C#. Fiz parte do projeto de migração tecnológica do Portal institucional Web JUCERJA',
-      year: '2015'
+      description: 'In 2015 I joined ATSNET Soluções em TI and was assigned to projects at the Commercial State of Rio de Janeiro, where I improved my front-end skills and had my first contact with the .NET platform and the C# programming language. I was part of the project to migrate the Web JUCERJA institutional portal.',
+      year: '2015',
+      height: 'auto',
+      width: '200px'
     },
     {
       logo: 'https://luafalcao-site-pessoal.s3.amazonaws.com/images/infobase-logo.png',
-      description: 'A Infobase foi uma escola onde aprendi a lidar com a pressão dos prazos de projetos, a entrar em contato com o cliente e a programar Web APIs em C# com a plataforma .NET. Ajudei a entregar soluções de software para clientes como Braslight, Capemisa, Generali, Eletros e Vivo Auto escritas em Angular JS, C# e ASP .NET MVC',
-      year: '2017'
+      description: 'Infobase was a school where I learned to handle the pressure of project deadlines, contact with customers, and program Web APIs in C# with the .NET platform. I helped deliver software solutions to clients like Braslight, Capemisa, Generali, Eletros and Vivo Auto written in Angular JS, C# and ASP .NET MVC',
+      year: '2017',
+      height: 'auto',
+      width: '200px'
     },
     {
       logo: 'https://luafalcao-site-pessoal.s3.amazonaws.com/images/ibm-logo.png',
-      description: 'Na IBM adquiri experiência fazendo parte de uma empresa de escala global com pessoas oriundas de diferentes países. Fiz parte do time de desenvolvimento da área Global Business Services programando interfaces de usuário e Web APIs para um software no ramo de seguros da multinacional Prudential do Brasil.',
-      year: '2018'
+      description: 'At IBM I gained experience working in a global scale company with people from different countries. I was part of the development team of the Global Business Services area programming user interfaces and Web APIs for a software in the insurance sector of the multinational Prudential do Brasil.',
+      year: '2018',
+      height: '60px',
+      width: 'auto'
     },
     {
       logo: 'https://luafalcao-site-pessoal.s3.amazonaws.com/images/perlink-logo.png',
-      description: 'Na Perlink estive trabalhando com o desenvolvimento de aplicações web construídas com Angular 8, ASP .NET Core, Oracle e GIT e estive alocado em projetos do cliente Oi para fazer a migração de seu Sistema Jurídico para uma tecnologia mais moderna. Também recebi treinamentos sobre cultura ágil e SCRUM passando a ajudar o time na realização de plannings, dailys, reviews e retrospectivas.',
-      year: '2019'
+      description: 'At Perlink I worked on the development of web applications built with Angular 8, ASP .NET Core, Oracle and GIT and was assigned to projects for the customer Oi to migrate their Legal System to a more modern technology. I also received training on agile culture and SCRUM passing to help the team in the realization of plannings, dailys, reviews and retrospectives.',
+      year: '2019',
+      height: 'auto',
+      width: '167px'
     },
     {
       logo: 'https://luafalcao-site-pessoal.s3.amazonaws.com/images/alterdata-logo.png',
-      description: 'Na Alterdata passei a colaborar em um time Ágil para ajudar a entregar software para o setor contábil, utilizando tecnologias web e mobile. Fiquei responsável pela publicação e desenvolvimento do app e-Contador para iPhones e iPads.',
-      year: '2020'
+      description: 'At Alterdata I collaborated in an agile team to help deliver software for the accounting sector, using web and mobile technologies. I was responsible for publishing and developing the e-Contador app for iPhones and iPads.',
+      year: '2020',
+      height: 'auto',
+      width: '200px'
     },
     {
       logo: 'https://luafalcao-site-pessoal.s3.amazonaws.com/images/agile-content.png',
-      description: 'Na Agile Content atuei remotamente colaborando como Desenvolvedor Full-Stack em um projeto de e-commerce para o cliente Personal. Tive mais contato com o ecossistema JavaScript desenvolvendo funcionalidades em Node.js, incluindo mecanismo de autorização de APIs com o padrão JWT, além de construir interfaces de usuário com HTML5, CSS3 e jQuery. Também adquiri experiência com uso do Docker e provisionamento de infraestrutura na AWS. Para efetuar as entregas de código fiz uso do Git como controle de versão.',
-      year: '2021'
+      description: 'At Agile Content I worked remotely collaborating as a Full-Stack Developer in an e-commerce project for the customer Personal. I had more contact with the JavaScript ecosystem developing functionalities in Node.js, including an API authorization mechanism with the JWT standard, and building user interfaces with HTML5, CSS3 and jQuery. I also gained experience with the use of Docker and infrastructure provisioning in AWS. To deliver code I used Git as a version control system.',
+      year: '2021',
+      height: 'auto',
+      width: '200px'
     },
     {
       logo: 'https://luafalcao-site-pessoal.s3.amazonaws.com/images/wipro.png',
-      description: `Wipro é uma multinacional de origem indiana onde tive a oportunidade de atuar em diferentes projetos voltado para o ramo financeiro no Banco Itaú e para o ramo de seguros na Akad Seguros. Atuei como Full-Stack e Back-end desenvolvendo APIs com a plataforma .NET, realizando melhorias na arquitetura do sistema e a construção de Interfaces de Usuário com o framework Angular. Também realizei manutenção em microsserviços e em sistemas distribuídos e apliquei diferentes Padrões de Projetos nas soluções implementadas.`,
-      year: '2022'
+      description: `Wipro is an Indian multinational where I had the opportunity to work in different projects focused on the financial sector at Banco Itaú and the insurance sector at Akad Seguros. I worked as a Full-Stack and Back-end Developer developing APIs with the .NET platform, improving system architecture and building User Interfaces with the Angular framework. I also performed maintenance in microservices and distributed systems and applied different Project Patterns in the implemented solutions.`,
+      year: '2022',
+      height: 'auto',
+      width: '160px'
+    },
+    {
+      logo: 'https://luafalcao-site-pessoal.s3.amazonaws.com/images/agl-logo3.png',
+      description: `In AGL Solution I have been working as a Full-Stack Developer using the .NET platform for building User Interfaces, reusable components for accelerate the productivity of the team and Web APIs for a vehicule monitoring system. I also helped the team to improve some processes and participated of agile mettings for organizing the work.`,
+      year: '2025',
+      height: 'auto',
+      width: '200px'
     }
-  ]
-
-  
+  ]  
 }
