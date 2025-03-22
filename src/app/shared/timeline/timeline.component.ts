@@ -65,13 +65,13 @@ export class TimelineComponent {
       year: '2022',
       height: 'auto',
       width: '160px'
-    },
-    {
-      logo: 'https://luafalcao-site-pessoal.s3.amazonaws.com/images/agl-logo3.png',
-      description: `In AGL Solution I have been working as a Full-Stack Developer using the .NET platform for building User Interfaces, reusable components for accelerate the productivity of the team and Web APIs for a vehicule monitoring system. I also helped the team to improve some processes and participated of agile mettings for organizing the work.`,
-      year: '2025',
-      height: 'auto',
-      width: '200px'
     }
+    //{
+      //logo: 'https://luafalcao-site-pessoal.s3.amazonaws.com/images/agl-logo3.png',
+      //description: `In AGL Solution I have been working as a Full-Stack Developer using the .NET platform for building User Interfaces, reusable components for accelerate the productivity of the team and Web APIs for a vehicle monitoring system. I also helped the team to improve some processes and participated of agile meetings for organizing the work.`,
+      //year: '2025',
+      //height: 'auto',
+      //width: '200px'
+    //}
   ]  
 }
